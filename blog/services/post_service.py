@@ -1,5 +1,4 @@
 from ..models import *
-from django.db import connection
 
 def listar_posts():
     posts = Post.objects.all()
