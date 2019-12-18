@@ -1,4 +1,6 @@
 from django.contrib import admin
+from mdeditor.widgets import MDEditorWidget
+
 from .models import *
 
 # Register your models here.
@@ -9,6 +11,9 @@ class PostInline(admin.StackedInline):
     model = Post
 
 class PostAdmin(admin.ModelAdmin):
+    formfield_overrides = {
+        models.TextField: {'widget': MDEditorWidget}
+    }
     list_filter = ['autor', 'data_cadastro', 'titulo']
 
 class AutorAdmin(admin.ModelAdmin):
