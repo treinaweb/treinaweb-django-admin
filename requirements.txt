@@ -1,6 +1,15 @@
 asgiref==3.2.3
+bleach==3.1.5
 Django==3.0.3
+django-grappelli==2.14.2
+django-markdownify==0.8.0
+django-mdeditor==0.1.18
+Markdown==3.2.2
 mysqlclient==1.4.6
-Pillow==6.2.1
+packaging==20.4
+Pillow==6.2.2
+pyparsing==2.4.7
 pytz==2019.3
+six==1.15.0
 sqlparse==0.3.0
+webencodings==0.5.1

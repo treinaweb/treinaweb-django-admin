@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'django_admin.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tw_django_admin',
+        'NAME': 'tw_django_admin_heroku',
         'USER': 'root',
         'PASSWORD': 'rootmysql',
         'HOST': 'localhost',
@@ -125,4 +125,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = (
+    BASE_DIR
+)
+
+MEDIA_URL = '/media/'
