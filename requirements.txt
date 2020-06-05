@@ -1,6 +1,6 @@
 asgiref==3.2.3
 bleach==3.1.5
-Django==3.0.3
+Django==3.0.7
 django-grappelli==2.14.2
 django-markdownify==0.8.0
 django-mdeditor==0.1.18
